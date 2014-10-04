@@ -4,6 +4,7 @@ import com.leapmotion.leap.Controller;
 import hackmizzouquadcontrolleap.leap.LeapListener;
 import hackmizzouquadcontrolleap.prototype.Panel;
 import hackmizzouquadcontrolleap.prototype.Window;
+import hackmizzouquadcontrolleap.serial.SerialCommunicator;
 
 /**
  * Project for HackMizzou 2014: QuadControl
@@ -25,6 +26,10 @@ public class HackMizzouQuadControlLeap {
         leap = new Controller();
         listener = new LeapListener();
         leap.addListener(listener);
+
+        SerialCommunicator serialCom = new SerialCommunicator(listener);
+        serialCom.start();
+
         while (true) {
             try {
                 leap.frame();

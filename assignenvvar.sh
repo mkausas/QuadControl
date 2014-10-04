@@ -1,0 +1,1 @@
+export DYLD_LIBRARY_PATH=Users/Marty/Desktop/rxtx-development/contrib/MAcOSX/RXTXInstaller/Sources/gnu/io/installer/resources/macosx/lib

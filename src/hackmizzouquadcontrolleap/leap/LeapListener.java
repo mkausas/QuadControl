@@ -55,6 +55,10 @@ public class LeapListener extends Listener {
         return value > 100 ? 100 : (value < -100 ? -100 : value);
     }
 
+    public String getFormattedReturnValue() {
+        return "" + pitch + " " + roll + " " + yaw + " " + y + " ";
+    }
+
     /**
      * Returns values needed to control the quadcopter.
      * Order of values:

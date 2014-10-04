@@ -16,8 +16,20 @@ int y = 0;
      val = Serial.read(); // read it and store it in val
 
    }
-   Serial.println(val);
-//  setValues(
+//   Serial.println(val);
+  setValues(val);
+  
+  Serial.print("pitch ");
+  Serial.print(pitch);
+  Serial.print(" roll ");
+  Serial.print(roll);
+  Serial.print(" yaw ");
+  Serial.print(yaw);
+  Serial.print(" y ");
+  Serial.println(y);
+  
+  
+//  + " roll " + roll + " yaw " + yaw + " y " + y); 
  }
 
 

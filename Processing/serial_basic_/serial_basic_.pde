@@ -1,24 +1,21 @@
 import processing.serial.*;
 
 Serial myPort;
-
+int num = 1000;
 void setup() {
   String portName = Serial.list()[7];
   println(portName);
   myPort = new Serial(this, portName, 115200);
   myPort.bufferUntil('\n'); 
-  }
-int x = 0;
-int y = 0;
-void draw() {
-  delay(10);
-  x++;
-//  y--;
+}
 
-//  println(x);
-  myPort.clear();
-  myPort.write(10);
-  myPort.write(20);
-  myPort.write(30);
+void draw() {
+//  num++;
+  myPort.write(60);
+  myPort.write(90);
+  myPort.write(150);
+  myPort.write(200);
   
- }
+  println(num);
+  delay(100);
+}

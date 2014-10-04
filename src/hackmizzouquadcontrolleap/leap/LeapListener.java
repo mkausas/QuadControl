@@ -27,7 +27,7 @@ public class LeapListener extends Listener {
     @Override
     public void onFrame(Controller paramController) {
         currentFrame = paramController.frame();
-
+//
         if (!currentFrame.hands().isEmpty()) {
 //            Vector palmPos = f.hands().frontmost().palmPosition();
 //            System.out.printf("pitch: %f, roll: %f\n", palmPos.pitch(), palmPos.roll());
@@ -47,7 +47,7 @@ public class LeapListener extends Listener {
     }
 
     /**
-     * 
+     *
      * @param value
      * @return
      */
